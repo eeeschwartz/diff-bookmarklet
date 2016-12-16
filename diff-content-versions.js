@@ -1,4 +1,6 @@
 var $ = jQuery;
+lexAppendScript('https://eeeschwartz.github.io/diff-bookmarklet/imagediff.js');
+lexAppendScript('https://eeeschwartz.github.io/diff-bookmarklet/html2canvas.min.js');
 
 $.ajax({
   url: $('link[rel="latest-version"').prop('href')
