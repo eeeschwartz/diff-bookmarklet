@@ -1,3 +1,9 @@
+var lexAppendScript = function(src) {
+  var jsCode = document.createElement('script');
+  jsCode.setAttribute('src', src);
+  document.body.appendChild(jsCode);
+}
+
 var $ = jQuery;
 lexAppendScript('https://eeeschwartz.github.io/diff-bookmarklet/imagediff.js');
 lexAppendScript('https://eeeschwartz.github.io/diff-bookmarklet/html2canvas.min.js');
